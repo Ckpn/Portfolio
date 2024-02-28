@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cihat KAPAN</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            background: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 200px;
+        }
+
+        .nav-con {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-list ul li a:hover {
+            color: grey;
+        }
+
+        /*  */
+        /*  */
+        .nav-list ul {
+            display: flex;
+            gap: 50px;
+
+        }
+
+        .nav-list li {
+            list-style-type: none;
+        }
+
+        .list1 {
+            text-decoration: none;
+            color: #eee;
+            font-size: 1.5rem;
+        }
+
+        .nav-con .hid4 {
+            display: none;
+        }
+
+        /* NAVBAR BİTİŞ */
+        .main-con1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: black;
+            width: 100%;
+            padding: 0px 200px;
+        }
+
+        .sec-con1 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .box-c1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            row-gap: 20px;
+        }
+
+        .box-c1 div {
+            color: #eee;
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: .5px;
+        }
+
+        .box-c2 {
+            display: flex;
+            align-items: center;
+        }
+
+        .box-c2 img {
+            animation: foto 1s infinite;
+        }
+
+        @keyframes foto {
+            100% {
+                filter: drop-shadow(4px 4px 4px rgb(162, 5, 5));
+            }
+        }
+
+        .mytext1 {
+            color: #ffb400 !important;
+            font-size: 3.5rem !important;
+
+        }
+
+        .mytext1:hover {
+            animation: shake 0.5s infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+
+            10% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+
+            90% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            100% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+        }
+
+        .main-con2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            padding: 0px 200px;
+        }
+
+        .sec-con2 {
+
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .box-c3 {
+            display: flex;
+            justify-content: space-between;
+            width: auto;
+            height: auto;
+        }
+
+        .box-c3 img {
+            animation: foto 1s infinite backwards;
+        }
+
+        .box-c4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 500px;
+        }
+
+        .main-con3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            padding: 50px 200px;
+            background-color: black;
+        }
+
+        .sec-con3 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .box-c5 {
+            display: flex;
+            width: 500px;
+            column-gap: 20px;
+        }
+
+        .hid3 {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .bx1 {
+            font-weight: 600;
+            color: grey;
+            font-size: 1.7rem;
+
+        }
+
+        .bx2 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .bx3 {
+            font-size: 2rem;
+            font-weight: 600;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #ffb400;
+
+        }
+
+        .bx4 {
+            font-size: 1.2rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #eee;
+        }
+
+        /* 
+        .bx5 i {
+            font-size: 100px;
+
+            color: #ffb400;
+            text-shadow: 0 2px 2px #dfdfdf,
+                -2px 5px 1px #b8b8b8,
+                -4px 8px 0px #979797,
+                -6px 11px 0px #747474,
+                -8px 14px 0px #565656,
+                -10px 17px 0px #343434,
+                -12px 20px 0px #171717,
+                -14px 23px 0px #000;
+            transition: 1s;
+            display: none;
+        }
+
+        .sec-con3:hover .bx5 i {
+            display: block;
+        } */
+        .hid2 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .hid2 i {
+            color: #ffb400;
+            font-size: 50px;
+            transition: all 1s;
+        }
+
+        .hid2 i:hover {
+            transform: scale(1.3);
+        }
+
+        .box-c6 {
+
+            display: flex;
+            align-items: center;
+        }
+
+        .img_1 {
+            transition: all 1s;
+        }
+
+        .img_1:hover {
+            transform: scale(1.3);
+        }
+
+        .img_2 {
+            transition: all 1s;
+        }
+
+        .img_2:hover {
+            transform: scale(1.3);
+        }
+
+        .img_3 {
+            transition: all 1s;
+        }
+
+        .img_3:hover {
+            transform: scale(1.3);
+        }
+
+        .main-con4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            padding: 50px 200px;
+        }
+
+        .sec-con4 {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .text_c {
+
+            font-family: 'text_c', cursive;
+
+            font-size: 3rem;
+
+            color: rgb(255, 0, 0);
+
+            opacity: 0.5;
+
+            text-shadow: 0px -78px rgb(255, 196, 0);
+
+            transition: all 1s;
+        }
+
+
+        .text_c:hover {
+            transform: scale(1.3);
+        }
+
+        .box-c7 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+
+        }
+
+        .box-c7 img {
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+
+        .bx8 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .bx9 {
+            display: flex;
+            gap: 20px;
+        }
+
+
+
+
+
+
+
+
+        /* MAİN BİTİŞ */
+
+        .footer-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 50px 200px;
+            background-color: black;
+            color: grey;
+        }
+
+        .foot-con {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .foot1 {
+            height: auto;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .fx1,
+        .fx2,
+        .fx3,
+        .fx4 p {
+            font-size: 1.5rem;
+        }
+
+
+
+        .foot2 {
+            height: auto;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .foot2 label {
+            margin: 10px;
+            font-size: 1.2rem;
+        }
+
+        .foot2 input {
+            width: 150px;
+            height: 30px;
+            margin: 10px;
+            outline: none;
+        }
+
+        .fx5 {
+            margin: 20px 20px 20px 0px;
+        }
+
+        .fa-brands {
+            color: grey;
+            font-size: 2rem;
+            margin: 0px 10px 0px 0px;
+
+        }
+
+        /* FOOTER BİTİŞ */
+
+        @media screen and (max-width:1250px) {
+            .navbar {
+                padding: 20px 50px;
+            }
+
+            .main-con1 {
+                padding: 0px 50px;
+            }
+
+            .main-con2 {
+                padding: 0px 50px;
+            }
+
+            .main-con3 {
+
+                padding: 50px 50px;
+            }
+
+            .main-con4 {
+                padding: 50px 50px;
+            }
+
+            .footer-main {
+
+                padding: 50px 50px;
+
+            }
+        }
+
+        @media screen and (max-width:1100px) {
+
+
+
+            .bx8 {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .bx9 {
+                display: flex;
+                flex-direction: column;
+            }
+
+
+        }
+
+        @media screen and (max-width:950px) {
+            .navbar {
+                padding: 0px 0px 0px 50px;
+            }
+
+            .nav-con .hid4 {
+                display: flex;
+                align-items: center;
+                color: #ffb400;
+                cursor: pointer;
+                position: absolute;
+                top: 20;
+                right: 100px;
+
+            }
+
+            .nav-con .nav-list {
+                width: 200px;
+                padding-top: 50px;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                right: -300px;
+                flex-direction: column;
+                background-color: #ffb400;
+                transition: .6s;
+                z-index: 10;
+            }
+
+            .nav-con .hid4:hover~.nav-list {
+                right: 0px;
+            }
+
+            .nav-list li {
+                list-style-type: none;
+                padding: 14px 0 14px 0;
+                display: flex;
+                justify-content: center;
+                transition: 0.4s;
+            }
+
+            .main-con1 {
+                padding: 0px 0px 0px 50px;
+            }
+
+            .main-con2 {
+                padding: 0px 0px 0px 50px;
+            }
+
+            .main-con3 {
+                padding: 0px 0px 0px 50px;
+            }
+
+            .main-con4 {
+                padding: 0px 0px 0px 50px;
+            }
+
+            .footer-main {
+                padding: 50px 0px 50px 50px;
+            }
+
+            .sec-con1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                padding-top: 40px;
+            }
+
+            .sec-con2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .sec-con3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 20px;
+                width: 100%;
+                padding: 50px 0px;
+            }
+
+            .sec-con4 {
+                padding: 50px 0px;
+            }
+
+
+
+
+            .box-c1 {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                row-gap: 30px;
+            }
+
+        }
+
+        @media screen and (max-width:576px) {
+
+            .navbar {
+                padding: 0px 0px 0px 0px;
+            }
+
+            .main-con1 {
+                padding: 0px 0px 0px 0px;
+            }
+
+            .main-con2 {
+                padding: 0px 0px 0px 0px;
+            }
+
+            .main-con3 {
+                padding: 0px 0px 0px 0px;
+            }
+
+            .main-con4 {
+                padding: 0px 0px 0px 0px;
+            }
+
+            .footer-main {
+                padding: 50px 0px 50px 0px;
+            }
+
+            .fx5 {
+                display: flex;
+            }
+
+            .box-c2 img {
+                width: 400px;
+            }
+
+            .box-c3 img {
+                width: 400px;
+            }
+
+            .bx8 img {
+                width: 400px;
+            }
+
+            .bx9 img {
+                width: 400px;
+            }
+
+            .foot-con {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box-c5 {
+                width: 100%;
+            }
+
+            .box-c4 {
+                width: 100%;
+            }
+            .foot1{
+                display: flex;
+                flex-direction: column;
+                row-gap: 3px;
+            }
+        }
+
+        @media screen and (max-width:425px) {}
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="nav-con">
+                <div class="nav-logo">
+                    <img height="80px" src="vendor/img/CKlogo.png" alt="">
+                </div>
+                <div class="hid4">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+
+                <div class="nav-list">
+
+                    <li><a class="list1" href="#about">Hakkımda</a></li>
+                    <li><a class="list1" href="#project">Projelerim</a></li>
+                    <li><a class="list1" href="#talents">Yeteneklerim</a></li>
+                    <li><a class="list1" href="#contact">İletişim</a></li>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-con1">
+            <div class="sec-con1">
+                <div class="box-c1">
+                    <div class="mytext1">Full Stack Developer</div>
+                    <div style="font-size: 3rem;">Hoşgeldiniz.
+                        Benimle iş ortağı olmak ister misiniz?</div>
+                    <div style=" display: flex; flex-direction: column;gap: 20px; ">İrtibat İçin Linke Tıklayınız : <a
+                            target="_blank" class="list1" href="https://wa.me/905331483643">
+                            <img class="whatsup1" width="300px" src="vendor/img/wp logo.png" alt="">
+                        </a></div>
+                </div>
+                <div class="box-c2">
+                    <img width="500px" src="vendor/img/favxx png.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="main-con2">
+            <div id="about" class="sec-con2">
+                <div class="box-c3">
+                    <img width="500px" src="vendor/img/ceketfavxx.png" alt="">
+                </div>
+                <div class="box-c4">
+                    <p
+                        style="font-size: 1.7rem; font-weight: 600;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-style: italic; padding-top: 30px;">
+                        AKADEMİK GEÇMİŞ</p><br><br>
+                    <ul>
+                        <li
+                            style="font-size: 1.2rem; font-weight: 500;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-style: italic;">
+                            Kdz Ereğli TED Koleji (Burslu) 2003 - 2007</li><br>
+                        <li
+                            style="font-size: 1.2rem; font-weight: 500;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-style: italic;">
+                            Marmara Üniversitesi 2007- ... </li><br>
+                        <li
+                            style="font-size: 1.2rem; font-weight: 500;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-style: italic;">
+                            Atatürk Üniversitesi -AOF 2019 - 2024</li><br>
+                        <li
+                            style="font-size: 1.2rem; font-weight: 500;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-style: italic;">
+                            Neos Yazılım Akademi 2023 - 2024 </li><br>
+                    </ul>
+                    <p
+                        style="font-size: 1.7rem; font-weight: 600;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-style: italic; padding-top: 30px;">
+                        İŞ DENEYİMİ</p><br><br>
+                    <ul>
+                        <li
+                            style="font-size: 1.2rem; font-weight: 500;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-style: italic;">
+                            SAHİBİNDEN BİLGİ TEKNOLOJİLERİ PAZ.VE TİC.AŞ. <br>İlan Kalite Uzmanı / 2017 - 2023</li><br>
+                        <li
+                            style="font-size: 1.2rem; font-weight: 500;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-style: italic;">
+                            TÜRK HAVA YOLLARI ANONİM ORTAKLIĞI <br>Kabin Memuru / 2011 - 2012 / 2014 - 2016 </li><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-con3">
+            <div id="talents" class="sec-con3">
+                <div class="box-c5">
+
+                    <div class="bx2">
+                        <div class="bx3">
+                            Programlama Becerilerim Neleri Kapsıyor?
+                        </div>
+                        <div class="bx4">
+                            Bu teknolojilerle kullanıcıların işlerini daha az çaba ve zaman harcayarak halletmelerine
+                            yardımcı olan basit, sezgisel ve duyarlı kullanıcı arayüzü geliştiriyorum.
+                        </div>
+                    </div>
+                </div>
+                <div class="box-c6">
+                    <!-- <div class="bx5">
+                        <i class="fa-solid fa-right-long"></i>
+                    </div> -->
+                    <div class="bx6">
+                        <div class="hid3">
+                            <p class="bx1">Yeteneklerim</p>
+                        </div>
+                        <div class="hid1">
+                            <img class="img_1" height="100px" src="vendor/img/html5.png" alt="">
+                            <img class="img_2" height="100px" src="vendor/img/css3.png" alt="">
+                            <img class="img_3" height="100px" src="vendor/img/javascript.png" alt="">
+                        </div>
+                        <div class="hid2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-con4">
+            <div class="sec-con4">
+                <div style="text-align: center;" class="box3">
+                    <h1 id="project" class="text_c" style="padding: 100px 0px;">UBER KLON</h1>
+                    <h3 style="font-size: 1.7rem;">Detaylar için fotoğraflara tıklayınız...</h3>
+                </div>
+                <div class="box-c7">
+                    <div class="bx8">
+                        <a target="_blank" href="../projecalisma/index.html"><img width="500px" src="vendor/img/UberAna.png" alt=""></a>
+                        <a target="_blank" href="../projecalisma/about.html"><img width="500px" src="vendor/img/Uber Hakkımızda.png" alt=""></a>
+                    </div>
+                    <div class="bx9">
+                        <a target="_blank" href="../projecalisma/uberofferings.html"><img width="500px" src="vendor/img/Uber Offer.png" alt=""></a>
+                        <a target="_blank" href="../projecalisma/blog.html"><img width="500px" src="vendor/img/Uber Blog.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div id="contact" class="footer-main">
+            <div class="foot-con">
+                <div class="foot1">
+                    <p style="font-size: 2rem;">İletişim Bilgilerim</p>
+                    <div class="fx1">
+                        <p>Adres: Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="fx2">
+                        <p>Telefon: Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="fx3">
+                        <p>E-mail: Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="fx4">
+                        <p>Sosyal Medya</p>
+                        <div class="fx5">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot2">
+
+                    <fieldset style="padding: 20px;">
+                        <legend>İletişim Formu</legend><br>
+                        <label for="">İsminiz</label><br>
+                        <input placeholder="Ad Soyad" type="text"><br>
+                        <label for="">E-mail Adresiniz</label><br>
+                        <input placeholder="example@gmail.com" type="email"><br>
+                        <label for="">Telefon Numaranız</label><br>
+                        <input placeholder="05** *** ** **" type="text"><br>
+                        <label for="">Mesajınız</label><br>
+                        <textarea style="outline: none;" name="" id="" cols="30" rows="10"></textarea>
+                        <button style="margin: 10px; width: 100px; height: 30px;border-radius: 10px;"
+                            type="submit">Gönder</button>
+                    </fieldset>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
